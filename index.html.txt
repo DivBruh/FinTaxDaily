@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FinTax Daily</title>
+  <meta name="description" content="Daily finance, tax & money tips">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>FinTax Daily</h1>
+  <p>Smart Finance • Tax • Money</p>
+</header>
+
+<main id="posts"></main>
+
+<footer>
+  <p>© 2025 FinTax Daily</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

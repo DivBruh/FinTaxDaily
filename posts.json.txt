@@ -1,0 +1,12 @@
+[
+  {
+    "title": "Best Credit Cards in India (2025)",
+    "summary": "Compare lifetime free credit cards with high rewards.",
+    "link": "https://www.amazon.in"
+  },
+  {
+    "title": "How to Save Tax Legally in India",
+    "summary": "Simple tax-saving tips under Section 80C & 80D.",
+    "link": "https://cleartax.in"
+  }
+]

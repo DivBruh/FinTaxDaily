@@ -1,0 +1,29 @@
+const fs = require('fs');
+
+const topics = [
+  "Best Tax Saving Options in India",
+  "Top Credit Cards for Salaried Employees",
+  "How to Build Emergency Fund",
+  "FD vs Mutual Funds Comparison",
+  "Passive Income Ideas in India"
+];
+
+const randomTopic = topics[Math.floor(Math.random() * topics.length)];
+
+const newPost = {
+  title: randomTopic + " (Updated)",
+  summary: "A simple guide explaining " + randomTopic.toLowerCase() + " with practical examples.",
+  link: "https://www.amazon.in/?tag=youraffiliateid"
+};
+
+let posts = [];
+
+if (fs.existsSync('posts.json')) {
+  posts = JSON.parse(fs.readFileSync('posts.json'));
+}
+
+posts.unshift(newPost); // add on top
+
+fs.writeFileSync('posts.json', JSON.stringify(posts, null, 2));
+
+console.log("New post added:", newPost.title);

@@ -1,0 +1,17 @@
+fetch('posts.json')
+  .then(response => response.json())
+  .then(data => {
+    let container = document.getElementById('posts');
+
+    data.forEach(post => {
+      let div = document.createElement('div');
+      div.className = 'article';
+
+      div.innerHTML = `
+        <a href="${post.link}" target="_blank">${post.title}</a>
+        <p>${post.summary}</p>
+      `;
+
+      container.appendChild(div);
+    });
+  });
